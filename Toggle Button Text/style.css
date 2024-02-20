@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.btn {
+  cursor: pointer;
+  width: 85px;
+  height: 45px;
+  font-size: 17px;
+  background: #3333bf;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+.btn:hover {
+  background: #0000ff;
+  filter: drop-shadow(0 0 19px #0000ff) drop-shadow(0 0 9px #0000ff) contrast(5)
+    brightness(2);
+  transition-duration: 0.7s;
+}
