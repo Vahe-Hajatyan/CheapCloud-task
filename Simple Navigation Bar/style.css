@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+nav {
+  background: rgb(62 61 61);
+  height: 50px;
+}
+td {
+  padding-right: 25px;
+  cursor: pointer;
+}
+.tableBlock {
+  color: white;
+  font-family: system-ui;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+.logo {
+  margin: 0;
+}
+.log-in-out {
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+}
