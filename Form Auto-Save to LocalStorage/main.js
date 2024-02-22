@@ -9,13 +9,18 @@ const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
 
 btn.addEventListener("click", () => {
-  localStorage.setItem("name", impName.value);
-  localStorage.setItem("email", impEmail.value);
+  const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  if (reg.test(email.value)) {
+    localStorage.setItem("name", impName.value);
+    localStorage.setItem("email", impEmail.value);
 
-  block.style.display = "none";
-  btn.style.display = "none";
-  p_block.style.display = "flex";
+    block.style.display = "none";
+    btn.style.display = "none";
+    p_block.style.display = "flex";
 
-  p1.innerHTML = "name = " + localStorage.getItem("name");
-  p2.innerHTML = "email = " + localStorage.getItem("email");
+    p1.innerHTML = "name = " + localStorage.getItem("name");
+    p2.innerHTML = "email = " + localStorage.getItem("email");
+  } else {
+    alert("email is not valid");
+  }
 });
