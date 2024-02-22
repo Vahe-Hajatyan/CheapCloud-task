@@ -1,0 +1,22 @@
+.block {
+  display: flex;
+  justify-content: center;
+}
+.block div {
+  width: 70px;
+  height: 70px;
+  background: silver;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#green:hover {
+  background: green;
+}
+#red:hover {
+  background: red;
+}
+#blue:hover {
+  background: blue;
+}
