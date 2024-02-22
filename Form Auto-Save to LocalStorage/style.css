@@ -1,0 +1,16 @@
+.block {
+  display: flex;
+  justify-content: center;
+}
+input {
+  display: block;
+  margin: 15px;
+}
+.btnBlock {
+  display: flex;
+  justify-content: center;
+}
+.p_block {
+  display: flex;
+  justify-content: center;
+}
