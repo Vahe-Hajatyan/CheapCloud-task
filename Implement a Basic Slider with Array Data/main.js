@@ -1,43 +1,28 @@
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const p = document.getElementById("p");
+const img = document.getElementById("img");
 
-let indexElement = 1;
+let indexElement = 0;
+
+const arr = ["./img/images.jpg", "./img/images.png", "./img/images2.png"];
 
 prev.addEventListener("click", () => {
-  if (indexElement !== 1) {
-    const imgForHide = document.getElementById(`${indexElement}`);
-    imgForHide.style.display = "none";
-
-    --indexElement;
-    const img = document.getElementById(`${indexElement}`);
-    img.style.display = "block";
+  if (indexElement !== 0) {
+    img.setAttribute("src", arr[--indexElement]);
   } else {
-    const imgForHide = document.getElementById(`${indexElement}`);
-    imgForHide.style.display = "none";
-
-    indexElement = 3;
-    const img = document.getElementById(`${indexElement}`);
-    img.style.display = "block";
+    indexElement = 2;
+    img.setAttribute("src", arr[indexElement]);
   }
-  p.innerHTML = indexElement;
+  p.innerHTML = indexElement + 1;
 });
 
 next.addEventListener("click", () => {
-  if (indexElement !== 3) {
-    const imgForHide = document.getElementById(`${indexElement}`);
-    imgForHide.style.display = "none";
-
-    ++indexElement;
-    const img = document.getElementById(`${indexElement}`);
-    img.style.display = "block";
+  if (indexElement !== 2) {
+    img.setAttribute("src", arr[++indexElement]);
   } else {
-    const imgForHide = document.getElementById(`${indexElement}`);
-    imgForHide.style.display = "none";
-
-    indexElement = 1;
-    const img = document.getElementById(`${indexElement}`);
-    img.style.display = "block";
+    indexElement = 0;
+    img.setAttribute("src", arr[indexElement]);
   }
-  p.innerHTML = indexElement;
+  p.innerHTML = indexElement + 1;
 });
