@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+nav {
+  background: rgb(39, 39, 39);
+  height: 50px;
+}
+td {
+  padding-right: 25px;
+  cursor: pointer;
+}
+.tableBlock {
+  color: rgb(255, 255, 255);
+  font-family: system-ui;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+.logo {
+  margin: 0;
+}
+.log-in-out {
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+}
+
+.img_icon img {
+  display: none;
+  width: 35px;
+}
+@media only screen and (max-width: 725px) {
+  .tableBlock {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 611px) {
+  .log-in-out {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .tableBlock {
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 517px) {
+  .tableBlock {
+    display: none;
+  }
+  .img_icon img {
+    display: block;
+  }
+  .img_icon {
+    display: flex;
+    justify-content: flex-end;
+    height: inherit;
+    align-items: center;
+    margin-right: 22px;
+  }
+}
+.adaptiv_block {
+  color: white;
+  font-family: system-ui;
+  display: none;
+}
+.adaptiv_block td {
+  display: block;
+  border-bottom: 1px solid;
+}
+.adaptiv_block table {
+  display: inherit;
+  text-align: center;
+  background: rgb(39, 39, 39);
+}
+.adaptiv_block .logo {
+  border-top: 1px solid;
+}
+tbody {
+  display: grid;
+}
