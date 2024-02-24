@@ -67,18 +67,21 @@ td {
   font-family: system-ui;
   display: none;
 }
-.adaptiv_block td {
+.adaptiv_block li {
   display: block;
   border-bottom: 1px solid;
 }
-.adaptiv_block table {
+.adaptiv_block ul {
   display: inherit;
   text-align: center;
   background: rgb(39, 39, 39);
-}
-.adaptiv_block .logo {
-  border-top: 1px solid;
+  margin: 0;
+  padding: 0;
 }
 tbody {
   display: grid;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
