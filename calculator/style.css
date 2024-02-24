@@ -1,0 +1,56 @@
+.calculator {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.divBlock {
+  background-color: #c5c5c5;
+  padding: 15px;
+  border-radius: 26px;
+  width: 253px;
+  box-shadow: inset 0px -6px 20px 5px #2c2c2c;
+}
+.btn {
+  margin-top: 15px;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 25px;
+  border: none;
+  background-color: #373737;
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px #373737;
+}
+[class^="btn"]:active {
+  transition-duration: 0.1s;
+  box-shadow: 1px 5px 5px #373737;
+}
+.bc {
+  background-color: #373737;
+  color: #b5b5b5;
+}
+.zero {
+  width: 125px;
+  text-align: left;
+  padding-left: 20px;
+}
+.type {
+  background: #ff8300;
+  color: white;
+}
+
+input {
+  width: 238px;
+  height: 45px;
+  font-size: 45px;
+  margin-top: 10px;
+  padding-right: 12px;
+  text-align: right;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 23px;
+  box-shadow: 1px 10px 10px #2c2c2c;
+}
