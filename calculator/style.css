@@ -8,14 +8,14 @@
   padding: 15px;
   border-radius: 26px;
   width: 253px;
-  box-shadow: inset 0px -6px 20px 5px #2c2c2c;
+  box-shadow: inset 0px -6px 30px 10px #2c2c2c;
 }
 .btn {
   margin-top: 15px;
   width: 60px;
   height: 60px;
   padding: 5px;
-  border-radius: 30px;
+  border-radius: 33px;
   font-size: 25px;
   border: none;
   background-color: #373737;
