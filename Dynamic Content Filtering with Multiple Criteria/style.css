@@ -1,0 +1,35 @@
+label p {
+  display: inline;
+}
+label {
+  display: block;
+}
+#elemBlock {
+  display: flex;
+}
+.elem {
+  margin: 20px;
+  padding: 22px;
+  font-size: 18px;
+  font-family: sans-serif;
+  background: #3b3b3b;
+  color: white;
+  border-radius: 19px;
+  box-shadow: -12px 13px 20px 2px #000000;
+}
+#buttonBlock {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#buttonBlock button {
+  margin: 10px;
+  padding: 4px 12px;
+  border: none;
+  background: #3b3b3b;
+  color: white;
+  border-radius: 19px;
+  box-shadow: -6px 8px 18px 0px #000000;
+}
+#buttonBlock p {
+  display: inline;
+}
