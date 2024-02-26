@@ -27,18 +27,17 @@ for (let i = 0; i < employees.length; ++i) {
     const td = document.createElement("td");
 
     if (typeof employees[i][key] === "object") {
-      let str = "";
+      let str = [];
 
       for (let key2 in employees[i][key]) {
-        str += employees[i][key][key2] + ",";
+        str[str.length] = employees[i][key][key2];
       }
 
-      td.textContent = str;
-      tr.append(td);
+      td.textContent = str.join(", ");
     } else {
       td.textContent = employees[i][key];
-      tr.append(td);
     }
+    tr.append(td);
   }
   body.append(tr);
 }
