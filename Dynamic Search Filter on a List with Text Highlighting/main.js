@@ -9,23 +9,27 @@ const books = [
   { id: 3, title: "1984", author: "George Orwell", year: 1949 },
 ];
 const inp = document.getElementById("inp");
-const submit = document.getElementById("submit");
 let elemBlock = document.getElementById("elemBlock");
 
-submit.addEventListener("click", () => {
-  elemBlock.textContent = "";
+function submit() {
+  setTimeout(() => {
+    elemBlock.textContent = "";
 
-  //search elem
-  for (let i = 0; i < books.length; ++i) {
-    for (let key in books[i]) {
-      if (books[i][key] == inp.value) {
-        createElem(books[i], key);
-        break;
+    //search elem
+    for (let i = 0; i < books.length; ++i) {
+      for (let key in books[i]) {
+        if (
+          books[i][key].toString().slice(0, inp.value.length) ==
+          inp.value.trim()
+        ) {
+          createElem(books[i], key);
+          break;
+        }
       }
     }
-  }
-  inp.value = "";
-});
+    // inp.value = "";
+  }, 1000);
+}
 
 function createElem(obj, searchKey) {
   const div = document.createElement("div");
@@ -50,6 +54,8 @@ function createElem(obj, searchKey) {
 
 function showAll() {
   elemBlock.textContent = "";
+  inp.value = "";
+  
   for (let i = 0; i < books.length; ++i) {
     createElem(books[i]);
   }
