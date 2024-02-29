@@ -1,8 +1,54 @@
 const inp = document.getElementById("inp");
 
+
 let type = "";
 let op1 = "";
 let op2 = "";
+
+const obj = {
+  "+": () => {
+    inp.value = +op1 + +op2;
+    op1 = inp.value;
+    op2 = "";
+    type = "";
+  },
+  "-": () => {
+    inp.value = +op1 - +op2;
+    op1 = inp.value;
+    op2 = "";
+    type = "";
+  },
+  "/": () => {
+    if (op2 == 0) {
+      alert("you can't divide by zero");
+      return;
+    }
+    inp.value = +op1 / +op2;
+    op1 = inp.value;
+    op2 = "";
+    type = "";
+  },
+  "%": () => {
+    if (op2 == 0) {
+      alert("you can't divide by zero");
+      return;
+    }
+    inp.value = +op1 % +op2;
+    op1 = inp.value;
+    op2 = "";
+    type = "";
+  },
+  "*": () => {
+    inp.value = +op1 * +op2;
+    op1 = inp.value;
+    op2 = "";
+    type = "";
+  },
+};
+
+function equal() {
+  obj[type]();
+}
 
 function handle(val) {
   if (type !== "") {
@@ -22,43 +68,6 @@ function addType(str) {
     inp.value = "";
   }
   type = str;
-}
-function equal() {
-  switch (type) {
-    case "+":
-      inp.value = +op1 + +op2;
-      op1 = inp.value;
-      op2 = "";
-      type = "";
-      break;
-    case "-":
-      inp.value = +op1 - +op2;
-      op1 = inp.value;
-      op2 = "";
-      type = "";
-      break;
-    case "*":
-      inp.value = +op1 * +op2;
-      op1 = inp.value;
-      op2 = "";
-      type = "";
-      break;
-    case "/":
-      inp.value = +op1 / +op2;
-      op1 = inp.value;
-      op2 = "";
-      type = "";
-      break;
-    case "%":
-      inp.value = +op1 % +op2;
-      op1 = inp.value;
-      op2 = "";
-      type = "";
-      break;
-    default:
-      alert("type is not defined");
-      break;
-  }
 }
 
 function ac() {

@@ -7,11 +7,11 @@
   background-color: #c5c5c5;
   padding: 15px;
   border-radius: 26px;
-  width: 253px;
+  width: 260px;
   box-shadow: inset 0px -6px 30px 10px #2c2c2c;
 }
 .btn {
-  margin-top: 15px;
+  margin: 15px 5px 0 0;
   width: 60px;
   height: 60px;
   padding: 5px;
