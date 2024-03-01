@@ -1,0 +1,144 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.block {
+  display: flex;
+}
+.block nav {
+  background: #404040;
+  font-family: system-ui;
+}
+.loginBlock {
+  background: #404040;
+  font-family: system-ui;
+}
+.navbar {
+  min-height: 100vh;
+  width: 300px;
+}
+
+.logo a {
+  font-size: 23px;
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  text-align: center;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+ul li:hover {
+  background: #ffffffff;
+  transition: 0.7s;
+  a {
+    color: #404040;
+    transition: 0.6s;
+  }
+}
+ul {
+  padding: 0;
+  margin: 75px 1px;
+  text-align: center;
+  display: initial;
+}
+.divblock {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+}
+.end {
+  align-self: flex-end;
+}
+
+.advertisingBlock {
+  height: 185px;
+  border: 1px solid white;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.newsBlock img {
+  width: 338px;
+  height: 135px;
+  border-radius: 30px 30px 0 0;
+}
+.newsBlock {
+  cursor: pointer;
+  width: 338px;
+  height: max-content;
+  margin: 15px;
+  background: #404040;
+  border-radius: 30px;
+}
+.content h2 {
+  margin: 0;
+  text-align: center;
+}
+.content p {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+.content {
+  color: white;
+  font-family: system-ui;
+  padding: 10px;
+}
+.contentBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 886px) {
+  .newsBlock {
+    width: 250px;
+  }
+  .contentBlock {
+    justify-content: space-around;
+  }
+  .newsBlock img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .newsBlock {
+    width: 200px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .newsBlock img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .contentBlock {
+    justify-content: center;
+  }
+  .newsBlock {
+    width: 70%;
+    /* height: 300px; */
+  }
+  .content p {
+    font-size: 17px;
+  }
+  .newsBlock img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .content p {
+    font-size: 12px;
+  }
+}
